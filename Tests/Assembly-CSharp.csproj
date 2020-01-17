@@ -76,45 +76,47 @@
     <Compile Include="Assets\Scripts\Enemigos\DisparoEnemigo.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemyStats.cs" />
+    <Compile Include="Assets\Scripts\escenario\OpenDoor.cs" />
+    <Compile Include="Assets\Scripts\escenario\PickController.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Personaje\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Personaje\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Personaje\UIVision.cs" />
     <Compile Include="Assets\Scripts\Personaje\WeaponChange.cs" />
-    <Compile Include="Assets\Scripts\UIVision.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Lozanol/UNITY/Tests/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Lozanol/Documents/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
