@@ -8,9 +8,9 @@ public class ProyectilEnenmigo : MonoBehaviour
 
     public float Destruccion;
 
-    public float damage;
+    public int damage;
 
-    public GameObject explosion;
+   
 
     Rigidbody rb;
 
@@ -29,14 +29,33 @@ public class ProyectilEnenmigo : MonoBehaviour
         
 
     }
-
+   
     private void OnTriggerEnter(Collider other)
     {
 
 
 
+        if ((other.gameObject.tag == "Player") || (other.transform.tag == "Suelo"))
+        {
+
+            Debug.Log("llega");
+           PlayerStats StatsJugador = other.gameObject.GetComponent<PlayerStats>();
+           
+            if (StatsJugador != null)
+            {
+                StatsJugador.DamagePlayer(damage);
+            }
+
+            //other.gameObject.SendMessage("HurtEnemy", damage, SendMessageOptions.DontRequireReceiver);
+
+            Destroy(gameObject);
+
+        }
+
 
     }
+
+
 
     void DestroyGameObject()
     {

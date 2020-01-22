@@ -40,13 +40,13 @@ public class Proyectil : MonoBehaviour
         {
 
             Debug.Log("llega");
-            //EnemyStats scriptEnemigo = other.gameObject.GetComponent<EnemyStats>();
-            //if (scriptEnemigo != null)
-            //{
-            //    scriptEnemigo.HurtEnemy(damage);
-            //}
+            EnemyStats scriptEnemigo = other.gameObject.GetComponent<EnemyStats>();
+            if (scriptEnemigo != null)
+            {
+                scriptEnemigo.HurtEnemy(damage);
+            }
 
-            other.gameObject.SendMessage("HurtEnemy", damage, SendMessageOptions.DontRequireReceiver);
+            //other.gameObject.SendMessage("HurtEnemy", damage, SendMessageOptions.DontRequireReceiver);
 
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);

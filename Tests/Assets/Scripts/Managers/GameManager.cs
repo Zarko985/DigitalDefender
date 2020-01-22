@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public bool Green = true;
     public bool Red = false;
+
+    
 
 
     // Start is called before the first frame update
@@ -45,5 +48,13 @@ public class GameManager : MonoBehaviour
                 
             }
         }
+        
     }
+
+    
+
 }
+
+
+
+
