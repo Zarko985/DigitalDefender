@@ -73,11 +73,14 @@
     <Compile Include="Assets\Scripts\Armas\DamageEnemy.cs" />
     <Compile Include="Assets\Scripts\Armas\DamagePlayer.cs" />
     <Compile Include="Assets\Scripts\Armas\Disparo.cs" />
+    <Compile Include="Assets\Scripts\Armas\Granada.cs" />
+    <Compile Include="Assets\Scripts\Armas\LanzarGranada.cs" />
     <Compile Include="Assets\Scripts\Armas\Proyectil.cs" />
     <Compile Include="Assets\Scripts\Armas\ProyectilEnenmigo.cs" />
-    <Compile Include="Assets\Scripts\Enemigos\DisparoEnemigo.cs" />
-    <Compile Include="Assets\Scripts\Enemigos\EnemyController.cs" />
-    <Compile Include="Assets\Scripts\Enemigos\EnemyStats.cs" />
+    <Compile Include="Assets\Scripts\Enemigo\DisparoEnemigo.cs" />
+    <Compile Include="Assets\Scripts\Enemigo\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\Enemigo\EnemyStats.cs" />
+    <Compile Include="Assets\Scripts\Enemigo\Sucidio.cs" />
     <Compile Include="Assets\Scripts\escenario\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\escenario\PickController.cs" />
     <Compile Include="Assets\Scripts\Managers\Button.cs" />
@@ -89,6 +92,8 @@
     <Compile Include="Assets\Scripts\Personaje\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Personaje\UIVision.cs" />
     <Compile Include="Assets\Scripts\Personaje\WeaponChange.cs" />
+    <Compile Include="Assets\Scripts\Torre\Lookat.cs" />
+    <Compile Include="Assets\Scripts\Torre\TowerStats.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Repos/DigitalDefender/Tests/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject Verde;
     public GameObject Rojo;
+
+    public Text Granadas;
+    public int Granadasrestantes;
+
 
     public bool Green = true;
     public bool Red = false;
@@ -26,16 +31,22 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        vision();
+        grenadeCantity();   
+    }
+
+    void vision()
+    {
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if ((Green == true) && (Red == false))
             {
-                
+
                 Green = false;
                 Verde.SetActive(false);
                 Red = true;
                 Rojo.SetActive(true);
-               
+
             }
             else
             if ((Green == false) && (Red == true))
@@ -45,12 +56,16 @@ public class GameManager : MonoBehaviour
                 Verde.SetActive(true);
                 Red = false;
                 Rojo.SetActive(false);
-                
+
             }
         }
-        
     }
 
+    void grenadeCantity()
+    {
+        Granadas.text = "Grandas:" + Granadasrestantes;
+           
+    }
     
 
 }
