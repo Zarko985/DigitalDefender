@@ -20,7 +20,7 @@ public class LanzarGranada : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if ((Input.GetKeyDown(KeyCode.Q) && (gameManager.Granadasrestantes > 0)))
         {
             
             Lanzar();
@@ -33,6 +33,6 @@ public class LanzarGranada : MonoBehaviour
        GameObject granada = Instantiate(Granada, Lanzamiento.position, Lanzamiento.rotation);
         Rigidbody rb = granada.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * Fuerza, ForceMode.VelocityChange);
-        gameManager.Granadasrestantes--; 
+        gameManager.Granadasrestantes -= 1; 
     }
 }

@@ -7,7 +7,8 @@ public class RespawnManager : MonoBehaviour
     public Transform player;
     public Transform Respawn;
 
-    public PlayerStats stats;
+    
+    GameManager gm;
 
 
     // Start is called before the first frame update
@@ -21,10 +22,10 @@ public class RespawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(stats.vida < 0)
+        if(gm.vida < 0)
         {
             player.transform.position = Respawn.position;
-            stats.vida = stats.vidamax;
+            gm.vida = gm.vidamax;
         }
     }
 

@@ -1,12 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Disparo : MonoBehaviour
 {
+
+    [Header("Arma")]
     public float FireRate;
     public GameObject Balaprefab;
     public Transform Cañon;
+    public int ammoMax;
+
+    [Header("HUD")]
+    public int ammo;
+    public int ammoTotal;
+    public Text Municion;
 
 
     private float nextTimeToShoot = 0f;
@@ -21,12 +31,34 @@ public class Disparo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToShoot)
+        if(ammo > 0)
         {
-            nextTimeToShoot = Time.time + 1f / FireRate;
+            if (Input.GetButton("Fire1") && Time.time >= nextTimeToShoot)
+            {
+                nextTimeToShoot = Time.time + 1f / FireRate;
+                ammo--;
 
-            Shoot();
+                Shoot();
+            }
         }
+
+        recarga();
+        TextoAmmo();
+        
+    }
+
+    void recarga()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            ammo = ammoMax;
+            ammoTotal -= ammoMax;
+        }
+    }
+
+    void TextoAmmo()
+    {
+        Municion.text = ammo + "/" + ammoTotal;
     }
 
     void Shoot()

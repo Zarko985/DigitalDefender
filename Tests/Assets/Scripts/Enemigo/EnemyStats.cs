@@ -8,13 +8,19 @@ public class EnemyStats : MonoBehaviour
     public float Vida;
     public float vidaMax = 1;
 
+    public float Tescudo;
+
+    [SerializeField]
+    bool canDamage = false;
+
     Color objAlpha;
     void Start()
     {
         Vida = vidaMax;
 
         objAlpha = GetComponent<MeshRenderer>().material.color;
-        
+
+       
         
     }
 
@@ -24,6 +30,7 @@ public class EnemyStats : MonoBehaviour
 
         decoloracion();
         Muerte();
+      
 
         //if (Vida >= 100)
         //{
@@ -52,7 +59,11 @@ public class EnemyStats : MonoBehaviour
     }
     public void HurtEnemy(float damage)
     {
-        Vida -= damage;
+        if(canDamage == true)
+        {
+            Vida -= damage;
+        }
+      
     }
 
 
@@ -62,6 +73,22 @@ public class EnemyStats : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void danarse()
+    {
+        canDamage = true;
+    }
+
+    private void OnEnable()
+    {
+        canDamage = false;
+        Invoke("danarse", Tescudo);
+
+    }
+    private void OnDisable()
+    {
+        canDamage = false;
     }
 
 }

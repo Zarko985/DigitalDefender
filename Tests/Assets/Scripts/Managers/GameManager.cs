@@ -6,17 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("VISION")]
     public GameObject Verde;
     public GameObject Rojo;
-
-    public Text Granadas;
-    public int Granadasrestantes;
-
 
     public bool Green = true;
     public bool Red = false;
 
-    
+    [Header("Granada")]
+    public Text Granadas;
+    public int Granadasrestantes;
+
+    [Header("VidaYEscudo")]
+
+    public int escudo;
+    public int escudomax = 50;
+
+    public int vida;
+    public int vidamax = 100;
+
+    public Slider barraVida;
+    public Slider barraEscudo;
+
+
+
+
+
+
 
 
     // Start is called before the first frame update
@@ -32,7 +48,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         vision();
-        grenadeCantity();   
+        grenadeCantity();
+        slidersEV();
     }
 
     void vision()
@@ -63,11 +80,20 @@ public class GameManager : MonoBehaviour
 
     void grenadeCantity()
     {
-        Granadas.text = "Grandas:" + Granadasrestantes;
-           
-    }
-    
+        Granadas.text = "Granadas:" + Granadasrestantes;
 
+    }
+
+    void slidersEV()
+    {
+
+        {
+            barraVida.value = vida;
+            barraEscudo.value = escudo;
+        }
+
+
+    }
 }
 
 

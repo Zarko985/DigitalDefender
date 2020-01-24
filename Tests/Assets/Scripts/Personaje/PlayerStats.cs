@@ -5,41 +5,33 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    
-    public int escudo;
-    int escudomax = 50;
 
-    public int vida;
-    public int vidamax = 100;
-
-    public Slider barraVida;
-    public Slider barraEscudo;
+    public GameManager gm;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        escudo = escudomax;
-        vida = vidamax;
-     
+        gm.escudo = gm.escudomax;
+        gm.vida = gm.vidamax;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        barraVida.value = vida;
-        barraEscudo.value = escudo;
+
     }
 
     public void DamagePlayer(int damage)
     {
-        if(escudo >= 1)
+        if(gm.escudo >= 1)
         {
-            escudo -= damage;
+            gm.escudo -= damage;
         }
         else
         {
-            vida -= damage;
+            gm.vida -= damage;
         }
     }
 
