@@ -38,7 +38,7 @@ public class LockActive : MonoBehaviour
         {
             GameObject.Find("First Person Player/Main Camera").GetComponent<MouseLook>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
-
+           
             PanelCodigo.SetActive(false);
         }
     }
