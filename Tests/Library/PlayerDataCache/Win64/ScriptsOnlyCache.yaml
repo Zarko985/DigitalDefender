@@ -14,12 +14,14 @@ ScriptsOnlyBuild:
     - MouseLook
     - OpenDoor
     - PickController
+    - Pickable
     - PlayerManager
     - PlayerMovement
     - PlayerStats
     - Proyectil
     - ProyectilEnenmigo
     - RespawnManager
+    - Sucidio
     - UIVision
     - WeaponChange
     Unity.ProBuilder.Editor.dll:
@@ -62,19 +64,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9770}
     - Class: 114
-      Script: {instanceID: 9978}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 10034}
+      Script: {instanceID: 10038}
     - Class: 114
-      Script: {instanceID: 10540}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 11024}
+      Script: {instanceID: 11034}
     - Class: 114
-      Script: {instanceID: 11632}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 12110}
+      Script: {instanceID: 12122}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -131,57 +133,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9770}
     - Class: 114
-      Script: {instanceID: 9978}
+      Script: {instanceID: 9796}
     - Class: 114
-      Script: {instanceID: 10028}
+      Script: {instanceID: 9852}
     - Class: 114
-      Script: {instanceID: 10034}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 10036}
+      Script: {instanceID: 10032}
     - Class: 114
-      Script: {instanceID: 10172}
+      Script: {instanceID: 10038}
     - Class: 114
-      Script: {instanceID: 10222}
+      Script: {instanceID: 10040}
     - Class: 114
-      Script: {instanceID: 10300}
+      Script: {instanceID: 10176}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10226}
     - Class: 114
-      Script: {instanceID: 10526}
+      Script: {instanceID: 10304}
     - Class: 114
-      Script: {instanceID: 10540}
+      Script: {instanceID: 10402}
+    - Class: 114
+      Script: {instanceID: 10498}
+    - Class: 114
+      Script: {instanceID: 10534}
     - Class: 114
       Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 10604}
+      Script: {instanceID: 10556}
     - Class: 114
-      Script: {instanceID: 10810}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 10812}
+      Script: {instanceID: 10734}
     - Class: 114
-      Script: {instanceID: 10818}
+      Script: {instanceID: 10820}
     - Class: 114
-      Script: {instanceID: 10870}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 10828}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 10880}
     - Class: 114
-      Script: {instanceID: 11632}
+      Script: {instanceID: 11412}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 12030}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 12110}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 11720}
     - Class: 114
-      Script: {instanceID: 15020}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 27384}
+      Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 27718}
+      Script: {instanceID: 12166}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -229,6 +235,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: 5a75267ff1330a71c5d533a11e2eaa47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LanzarGranada
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -239,6 +251,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 92982212ec34f9ea59a5b676b5151d88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Sucidio
   - hash:
       serializedVersion: 2
       Hash: 9c7c87712e298256d276eb96e02a57b1
@@ -421,7 +439,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: a278ec117114a7f615cdc273abad2cd0
+      Hash: 7fcd834cd7eea57ce1e5898dc4e428c3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerStats
@@ -439,6 +457,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 258436339a2c9681db462e0c7b4f0d49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TowerStats
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -449,6 +473,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GunShoot
+  - hash:
+      serializedVersion: 2
+      Hash: 67d62b09f273fae008d429f93d377497
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Lookat
   - hash:
       serializedVersion: 2
       Hash: bb8814741d7085ebb3d19a1a11769619
@@ -505,6 +535,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 82ff000c1300d7d4057f10d7f2f48a4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pickable
+  - hash:
+      serializedVersion: 2
       Hash: 8429f5e2e74458d387d20325476dffbf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -529,13 +565,13 @@ ScriptsOnlyBuild:
     className: DamageEnemy
   - hash:
       serializedVersion: 2
-      Hash: 258436339a2c9681db462e0c7b4f0d49
+      Hash: 7d7bf97c6dedfd880d7e88ca011478b9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyStats
   - hash:
       serializedVersion: 2
-      Hash: 0d62a045796677234009492e10952174
+      Hash: 697e6bccc801131b9ee47a9c20bf8e9b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -649,7 +685,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: d4c89dad7bc098fdf5d76db14aed3f92
+      Hash: 99e89927743d417cd4cfa29d3ab28aa2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RespawnManager
@@ -715,6 +751,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: dfb5aabf793724d596db7fbc1efee13b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Granada
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -757,7 +799,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 5e762dbffc47c030f4fc91cc1dd26ddf
+      Hash: 6501fe97b99439f28e75a6e61a6dcb02
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Disparo
@@ -827,32 +869,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 67d62b09f273fae008d429f93d377497
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Lookat
-  - hash:
-      serializedVersion: 2
-      Hash: 258436339a2c9681db462e0c7b4f0d49
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TowerStats
-  - hash:
-      serializedVersion: 2
-      Hash: dfb5aabf793724d596db7fbc1efee13b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Granada
-  - hash:
-      serializedVersion: 2
-      Hash: 5a75267ff1330a71c5d533a11e2eaa47
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LanzarGranada
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/Derrota.unity
-  playerPath: C:/Users/Jorge/Desktop/Entregas/BuildsDD testeo/Tests.exe
+  playerPath: C:/Users/Jorge/Desktop/Entregas/Builds/Hito2/Tests.exe

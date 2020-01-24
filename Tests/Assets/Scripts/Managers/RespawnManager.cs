@@ -8,7 +8,7 @@ public class RespawnManager : MonoBehaviour
     public Transform Respawn;
 
     
-    GameManager gm;
+    public GameManager gm;
 
 
     // Start is called before the first frame update

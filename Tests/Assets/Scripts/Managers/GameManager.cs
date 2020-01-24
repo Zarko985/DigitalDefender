@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public Slider barraVida;
     public Slider barraEscudo;
 
+ 
 
 
 
