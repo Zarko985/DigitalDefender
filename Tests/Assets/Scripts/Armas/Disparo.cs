@@ -42,6 +42,8 @@ public class Disparo : MonoBehaviour
             }
         }
 
+
+
         recarga();
         TextoAmmo();
         
@@ -51,8 +53,8 @@ public class Disparo : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         {
-            ammo = ammoMax;
-            ammoTotal -= ammoMax;
+            Invoke("reload", 1f);
+           
         }
     }
 
@@ -67,5 +69,13 @@ public class Disparo : MonoBehaviour
         Instantiate(Balaprefab, Cañon.position, Cañon.rotation);
 
     }
+
+    void reload()
+    {
+        ammo = ammoMax;
+        ammoTotal -= ammoMax;
+    }
+
+    
 
 }

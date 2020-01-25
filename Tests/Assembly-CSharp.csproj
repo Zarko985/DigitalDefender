@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\escenario\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\escenario\Pickable.cs" />
     <Compile Include="Assets\Scripts\escenario\PickController.cs" />
+    <Compile Include="Assets\Scripts\escenario\Victoria.cs" />
     <Compile Include="Assets\Scripts\LockController\CodeLock.cs" />
     <Compile Include="Assets\Scripts\LockController\LockActive.cs" />
     <Compile Include="Assets\Scripts\Managers\Button.cs" />

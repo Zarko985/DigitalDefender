@@ -22,7 +22,7 @@ public class CodeLock : MonoBehaviour
     {
         code.text = codeValue;
 
-        if(codeValue == "2813")
+        if(codeValue == "1352")
         {
             Destroy(door);
         }

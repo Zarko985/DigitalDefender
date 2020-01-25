@@ -96,7 +96,8 @@ MonoBehaviour:
   speed: 20
   Destruccion: 3
   damage: 0.2
-  explosion: {fileID: 0}
+  explosion: {fileID: 2811494603761551107, guid: 5aeedfea5ad6d134481154a0350408e2,
+    type: 3}
 --- !u!135 &5899238095166216763
 SphereCollider:
   m_ObjectHideFlags: 0
