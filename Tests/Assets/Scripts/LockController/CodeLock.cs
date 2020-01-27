@@ -20,7 +20,7 @@ public class CodeLock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        code.text = codeValue;
+        code.text = codeValue;  
 
         if(codeValue == "1352")
         {
